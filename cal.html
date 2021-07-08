@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="cal.css" />
+  </head>
+  <body>
+    <div id="MainCalcontainer">
+      <div id="ScreenCalcontainer">
+        <div style="padding-right: 4px" id="NumberOnScreen">0</div>
+      </div>
+
+      <div id="ButtonContainer">
+        <div id="ButtonRow">
+          <button onclick="getnumber('0')" class="calcButton1">0</button>
+          <button onclick="getnumber('1')" class="calcButton">1</button>
+          <button onclick="getnumber('2')" class="calcButton">2</button>
+          <button onclick="getnumber('3')" class="calcButton">3</button>
+        </div>
+
+        <div id="ButtonRow">
+          <button onclick="getnumber('4')" class="calcButton">4</button>
+          <button onclick="getnumber('5')" class="calcButton">5</button>
+          <button onclick="getnumber('6')" class="calcButton">6</button>
+        </div>
+
+        <div id="ButtonRow">
+          <button onclick="getnumber('7')" class="calcButton">7</button>
+          <button onclick="getnumber('8')" class="calcButton">8</button>
+          <button onclick="getnumber('9')" class="calcButton">9</button>
+        </div>
+
+        <div id="ButtonRow">
+          <button onclick="getoper('+')" class="calcButton">+</button>
+          <button onclick="getoper('-')" class="calcButton">-</button>
+          <button onclick="getoper('*')" class="calcButton">*</button>
+        </div>
+        <div id="ButtonRow">
+          <button onclick="getoper('/')" class="calcButton">/</button>
+          <button onclick="equal()" class="calcButton">=</button>
+          <button onclick="clearall()" class="calcButton">clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="cal.js"></script>
+  </body>
+</html>
